@@ -1,0 +1,9 @@
+<p class='ml-5'>
+<strong class='nameUser'> <%= comment.commenter %>: </strong>
+<i> <%= comment.body %> </i>
+  <%= link_to 'Delete', [comment.article, comment],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</p>
+
+
